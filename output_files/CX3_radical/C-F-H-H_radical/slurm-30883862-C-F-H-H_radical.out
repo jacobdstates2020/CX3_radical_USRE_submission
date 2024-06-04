@@ -1,0 +1,127 @@
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_vx=x
++ '[' -n x ']'
++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for this output (/sw/apps/lmod/lmod/init/bash)
+Shell debugging restarted
++ unset __lmod_vx
++ maxtime=3585
++ INPUT_FILE=C-F-H-H_radical.inp
+++ date +%Y-%m-%d %H:%M:%S
+date: extra operand ‘%H:%M:%S’
+Try 'date --help' for more information.
++ mystart=
++ OUTPUT_DIR=/beegfs/scratch/jdstates/Radical_Geometry/CX3_geometry_calcs/input_files/CX3_radical/C-F-H-H_radical
++ mkdir -p /beegfs/scratch/jdstates/Radical_Geometry/CX3_geometry_calcs/input_files/CX3_radical/C-F-H-H_radical_IN-PROGRESS
++ cp /beegfs/scratch/jdstates/Radical_Geometry/CX3_geometry_calcs/input_files/CX3_radical/C-F-H-H_radical.inp /beegfs/scratch/jdstates/Radical_Geometry/CX3_geometry_calcs/input_files/CX3_radical/C-F-H-H_radical_IN-PROGRESS/C-F-H-H_radical.inp
++ rm /beegfs/scratch/jdstates/Radical_Geometry/CX3_geometry_calcs/input_files/CX3_radical/C-F-H-H_radical.inp
++ cp /beegfs/scratch/jdstates/Radical_Geometry/CX3_geometry_calcs/input_files/CX3_radical/C-F-H-H_radical.s /beegfs/scratch/jdstates/Radical_Geometry/CX3_geometry_calcs/input_files/CX3_radical/C-F-H-H_radical_IN-PROGRESS/C-F-H-H_radical.s
++ rm /beegfs/scratch/jdstates/Radical_Geometry/CX3_geometry_calcs/input_files/CX3_radical/C-F-H-H_radical.s
++ ml libs/lapack/gcc
+++ /sw/apps/lmod/lmod/libexec/ml_cmd libs/lapack/gcc
++ eval 'module  load '\''libs/lapack/gcc'\'''
+++ module load libs/lapack/gcc
+++ '[' -z '' ']'
+++ case "$-" in
+++ __lmod_sh_dbg=x
+++ '[' -n x ']'
+++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for Lmod's output
+Shell debugging restarted
+++ unset __lmod_sh_dbg
+++ return 0
++ ml libs/openblas
+++ /sw/apps/lmod/lmod/libexec/ml_cmd libs/openblas
++ eval 'module  load '\''libs/openblas'\'''
+++ module load libs/openblas
+++ '[' -z '' ']'
+++ case "$-" in
+++ __lmod_sh_dbg=x
+++ '[' -n x ']'
+++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for Lmod's output
+Shell debugging restarted
+++ unset __lmod_sh_dbg
+++ return 0
++ ml apps/nbo/7
+++ /sw/apps/lmod/lmod/libexec/ml_cmd apps/nbo/7
++ eval 'module  load '\''apps/nbo/7'\'''
+++ module load apps/nbo/7
+++ '[' -z '' ']'
+++ case "$-" in
+++ __lmod_sh_dbg=x
+++ '[' -n x ']'
+++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for Lmod's output
+Shell debugging restarted
+++ unset __lmod_sh_dbg
+++ return 0
++ export NBOEXE=/sw/apps/nbo/7/bin/nbo7.i4.exe
++ NBOEXE=/sw/apps/nbo/7/bin/nbo7.i4.exe
++ export KMP_AFFINITY=respect,verbose
++ KMP_AFFINITY=respect,verbose
++ ml compilers/gcc mpi/openmpi/gcc-cuda apps/orca/openmpi/5.0.4
+++ /sw/apps/lmod/lmod/libexec/ml_cmd compilers/gcc mpi/openmpi/gcc-cuda apps/orca/openmpi/5.0.4
++ eval 'module  load '\''compilers/gcc'\'' '\''mpi/openmpi/gcc-cuda'\'' '\''apps/orca/openmpi/5.0.4'\'''
+++ module load compilers/gcc mpi/openmpi/gcc-cuda apps/orca/openmpi/5.0.4
+++ '[' -z '' ']'
+++ case "$-" in
+++ __lmod_sh_dbg=x
+++ '[' -n x ']'
+++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for Lmod's output
+Shell debugging restarted
+++ unset __lmod_sh_dbg
+++ return 0
+++ echo 30883862
++ JOBID=30883862
++ cd /beegfs/scratch/jdstates/Radical_Geometry/CX3_geometry_calcs/input_files/CX3_radical/C-F-H-H_radical_IN-PROGRESS
+++ date +%s.%N
++ start=1715998994.680941505
++ OUTPUT_FILE=C-F-H-H_radical.out
++ timeout -s SIGTERM 3585 orca /beegfs/scratch/jdstates/Radical_Geometry/CX3_geometry_calcs/input_files/CX3_radical/C-F-H-H_radical_IN-PROGRESS/C-F-H-H_radical.inp
+NBRECVM: error reading from socket: Connection reset by peer
++ CALC_STATUS=0
+++ date +%s.%N
++ end=1715999230.273625581
++ [[ 0 == 0 ]]
++ cubegen=/u/mx/cx/jdstates/scratch/MyScripts/orca_orbital_cubegen.s
++ chmod +x /u/mx/cx/jdstates/scratch/MyScripts/orca_orbital_cubegen.s
+chmod: cannot access ‘/u/mx/cx/jdstates/scratch/MyScripts/orca_orbital_cubegen.s’: No such file or directory
++ /u/mx/cx/jdstates/scratch/MyScripts/orca_orbital_cubegen.s -f C-F-H-H_radical_opt.gbw
+/var/spool/slurm/d/job30883862/slurm_script: line 82: /u/mx/cx/jdstates/scratch/MyScripts/orca_orbital_cubegen.s: No such file or directory
++ echo 'MO VISUALIZATION FAILED'
+MO VISUALIZATION FAILED
++ sed -n '/Now starting NBO\.\.\./,/returned from  NBO  program/p' C-F-H-H_radical.out
++ tail -n +2
++ head -n -1
++ [[ 0 == 124 ]]
++ [[ 0 != 0 ]]
++ [[ 0 == 0 ]]
++ status=NORMAL
+++ echo '1715999230.273625581 - 1715998994.680941505'
+++ bc -l
++ runtime=235.592684076
++ echo 235.592684076
+235.592684076
++ exec
++ echo ''
++ echo 'slurmID:    30883862'
++ echo 'totalRuntime[s]:    235.592684076'
++ exec
+++ grep -m 1 'Number of basis functions' C-F-H-H_radical.out
+++ awk '{print $NF}'
+++ tr -d '[:space:]'
++ myBasis=132
++ myBasis=($myBasis)
+++ date +%Y-%m-%d %H:%M:%S
+date: extra operand ‘%H:%M:%S’
+Try 'date --help' for more information.
++ myend=
++ cd /beegfs/scratch/jdstates/Radical_Geometry/CX3_geometry_calcs/input_files/CX3_radical
++ '[' '!' -f job_timings.csv ']'
++ exec
++ echo C-F-H-H_radical.inp,30883862,132,,,235.592684076,NORMAL
++ exec
++ cp /beegfs/scratch/jdstates/Radical_Geometry/CX3_geometry_calcs/input_files/CX3_radical/slurm-30883862.out /beegfs/scratch/jdstates/Radical_Geometry/CX3_geometry_calcs/input_files/CX3_radical/C-F-H-H_radical_IN-PROGRESS/slurm-30883862-C-F-H-H_radical.out

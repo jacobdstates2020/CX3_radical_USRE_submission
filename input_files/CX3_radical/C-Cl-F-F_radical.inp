@@ -1,0 +1,31 @@
+# Formula: C-Cl-F-F_radical
+
+! UKS NORI TightSCF PBE0 aug-cc-PVTZ-J xyzfile opt NOPOP
+%base "C-Cl-F-F_radical_opt" 
+
+* xyz 0 2
+C	-0.104	0.005	0.360
+Cl	1.609	-0.013	-0.099
+F	-0.747	-1.106	-0.130
+F	-0.759	1.115	-0.131
+*
+
+$new_job
+! UKS NORI PBE0 aug-cc-PVTZ-J NBO
+%base "C-Cl-F-F_radical_EPR"
+
+*xyzfile 0 2
+
+%EPRNMR
+	GTENSOR		TRUE
+	NUCLEI		= ALL C  {AISO, ADIP, AORB}
+	NUCLEI		= ALL H  {AISO, ADIP, AORB}
+	NUCLEI		= ALL F  {AISO, ADIP, AORB}
+	NUCLEI		= ALL Cl {AISO, ADIP, AORB}
+	NUCLEI		= ALL Br {AISO, ADIP, AORB}
+	NUCLEI		= ALL I  {AISO, ADIP, AORB}
+END
+
+%NBO
+	NBOKEYLIST = "$NBO NBO NPA AONBO=C PRINT=1 ARCHIVE $END"
+END
