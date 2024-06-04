@@ -1,0 +1,31 @@
+# Formula: {molecule}
+
+! UKS NORI TightSCF PBE0 aug-cc-PVTZ-J xyzfile opt NOPOP
+%base "{molecule}_opt" 
+
+* xyz 0 2
+C	{Cx_in:.3f}	{Cy_in:.3f}	{Cz_in:.3f}
+{atomA}	{xA_in:.3f}	{yA_in:.3f}	{zA_in:.3f}
+{atomB}	{xB_in:.3f}	{yB_in:.3f}	{zB_in:.3f}
+{atomC}	{xC_in:.3f}	{yC_in:.3f}	{zC_in:.3f}
+*
+
+$new_job
+! UKS NORI PBE0 aug-cc-PVTZ-J NBO
+%base "{molecule}_EPR"
+
+*xyzfile 0 2
+
+%EPRNMR
+	GTENSOR		TRUE
+	NUCLEI		= ALL C  {{AISO, ADIP, AORB}}
+	NUCLEI		= ALL H  {{AISO, ADIP, AORB}}
+	NUCLEI		= ALL F  {{AISO, ADIP, AORB}}
+	NUCLEI		= ALL Cl {{AISO, ADIP, AORB}}
+	NUCLEI		= ALL Br {{AISO, ADIP, AORB}}
+	NUCLEI		= ALL I  {{AISO, ADIP, AORB}}
+END
+
+%NBO
+	NBOKEYLIST = "$NBO NBO NPA AONBO=C PRINT=1 ARCHIVE $END"
+END

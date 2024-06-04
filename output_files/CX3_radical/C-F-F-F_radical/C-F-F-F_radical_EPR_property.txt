@@ -1,0 +1,201 @@
+-------------------------------------------------------------
+----------------------- !PROPERTIES! ------------------------
+-------------------------------------------------------------
+# -----------------------------------------------------------
+$ SCF_Energy
+   description: The SCF energy
+   geom. index: 1
+   prop. index: 1
+        SCF Energy:     -337.3831526629
+# -----------------------------------------------------------
+$ DFT_Energy
+   description: The DFT energy
+   geom. index: 1
+   prop. index: 1
+   Number of Alpha Electrons                 16.9999504046 
+   Number of Beta  Electrons                 15.9999817660 
+   Total number of  Electrons                32.9999321707 
+   Exchange energy                          -26.4943783360 
+   Correlation energy                        -1.1386470153 
+   Correlation energy NL                      0.0000000000 
+   Exchange-Correlation energy              -27.6330253514 
+   Embedding correction                       0.0000000000 
+   Total DFT Energy (No VdW correction)    -337.3831526629 
+# -----------------------------------------------------------
+$ Mayer_Pop
+   description: The Mayer population analysis
+   geom. index: 1
+   prop. index: 1
+     Number of atoms                     : 4
+     Threshold for printing              : 0.1000000
+     Number of bond orders printed       : 3
+  NA   - Mulliken gross atomic population
+  ZA   - Total nuclear charge
+  QA   - Mulliken gross atomic charge
+  VA   - Mayer's total valence
+  BVA  - Mayer's bonded valence
+  FA   - Mayer's free valence
+  ATOM       NA         ZA         QA         VA         BVA        FA
+  0   0     5.5284     6.0000     0.4716     3.9473     3.2562     0.6911
+  1   0     9.1570     9.0000    -0.1570     1.1085     1.1012     0.0073
+  2   0     9.1573     9.0000    -0.1573     1.1081     1.1009     0.0072
+  3   0     9.1573     9.0000    -0.1573     1.1080     1.1008     0.0072
+      Bond orders larger than 0.1000000
+           Atom A     A.N. of A          Atom B    A.N. of B              Bond order
+                0             6               1            9                1.085674
+                0             6               2            9                1.085303
+                0             6               3            9                1.085304
+# -----------------------------------------------------------
+$ Calculation_Info
+   description: Details of the calculation
+   geom. index: 1
+   prop. index: 1
+     Multiplicity:                          2
+     Charge:                                0
+     number of atoms:                       4
+     number of electrons:                   0
+     number of frozen core electrons:       1
+     number of correlated electrons:        0
+     number of basis functions:             184
+     number of aux C basis functions:       0
+     number of aux J basis functions:       0
+     number of aux JK basis functions:      0
+     number of aux CABS basis functions:    0
+     Total Energy                           -337.383153
+# -----------------------------------------------------------
+$ SCF_Electric_Properties
+   description: The SCF Calculated Electric Properties
+   geom. index: 1
+   prop. index: 1
+       Filename                          : C-F-F-F_radical_EPR.scfp 
+       Do Dipole Moment Calculation      : true 
+       Do Quadrupole Moment Calculation  : false 
+       Do Polarizability Calculation     : false 
+** Dipole moment part of electric properties **
+        Magnitude of dipole moment (Debye) :        0.2740244185
+        Electronic Contribution:
+                  0    
+      0      -0.000333
+      1      -0.000298
+      2      -0.082736
+        Nuclear Contribution:
+                  0    
+      0      -0.000338
+      1      -0.000690
+      2       0.190537
+        Total Dipole moment:
+                  0    
+      0      -0.000671
+      1      -0.000988
+      2       0.107801
+# -----------------------------------------------------------
+$ EPRNMR_GTensor
+   description: Electronic g tensor
+   geom. index: 1
+   prop. index: 1
+ Source density: 1 SCF 
+ Spin multiplicity: 2 
+ raw g tensor: 
+                  0          1          2    
+      0       2.003874  -0.000000   0.000003
+      1      -0.000000   2.003874   0.000007
+      2       0.000003   0.000007   2.001715
+ g tensor: 
+                  0          1          2    
+      0      -0.001477   0.563270  -0.826272
+      1      -0.003253   0.826266   0.563271
+      2       0.999994   0.003520   0.000612
+ G eigenvalues: 
+                  0          1          2    
+      0       2.001715   2.003874   2.003874
+# -----------------------------------------------------------
+$ EPRNMR_ATensor
+   description: Hyperfine A tensor
+   geom. index: 1
+   prop. index: 1
+ Number of stored nuclei 4
+ Source density: 1 SCF 
+ Spin multiplicity: 2 
+ Nucleus: 0 C  
+ Isotope: 13 
+ Nuclear Spin:  0.5 
+ Prefactor (MHz): 134.190303 
+ Raw A tensor (MHz): 
+                  0          1          2    
+      0     665.787469  -0.000594  -0.263736
+      1      -0.000597 665.787888  -0.608898
+      2      -0.263714  -0.608867 863.146682
+ A Tensor eigenvectors:
+                   0          1          2    
+      0       0.563061   0.826414   0.001336
+      1       0.826409  -0.563062   0.003085
+      2       0.003302  -0.000633  -0.999994
+ A Eigenvalues: 
+                  0          1          2    
+      0     665.785049 665.788077 863.148913
+A(iso)  731.574013
+ Nucleus: 1 F  
+ Isotope: 19 
+ Nuclear Spin:  0.5 
+ Prefactor (MHz): 502.224752 
+ Raw A tensor (MHz): 
+                  0          1          2    
+      0     224.851341  13.432714  85.026984
+      1      13.432896 233.633953 117.520229
+      2      84.840626 117.261254 733.967549
+ A Tensor eigenvectors:
+                   0          1          2    
+      0       0.563310   0.811639  -0.154676
+      1       0.782985  -0.584159  -0.213761
+      2      -0.263852  -0.000695  -0.964563
+ A Eigenvalues: 
+                  0          1          2    
+      0     203.777198 215.110390 773.565256
+A(iso)  397.484281
+ Nucleus: 2 F  
+ Isotope: 19 
+ Nuclear Spin:  0.5 
+ Prefactor (MHz): 502.224752 
+ Raw A tensor (MHz): 
+                  0          1          2    
+      0     219.812872 -10.960416  59.521674
+      1     -10.958558 240.232981 -135.438249
+      2      59.390758 -135.147507 731.979529
+ A Tensor eigenvectors:
+                   0          1          2    
+      0      -0.395770   0.911926  -0.108426
+      1       0.877885   0.410346   0.246848
+      2       0.269599   0.002510  -0.962969
+ A Eigenvalues: 
+                  0          1          2    
+      0     203.662681 215.045805 773.316895
+A(iso)  397.341794
+ Nucleus: 3 F  
+ Isotope: 19 
+ Nuclear Spin:  0.5 
+ Prefactor (MHz): 502.224752 
+ Raw A tensor (MHz): 
+                  0          1          2    
+      0     244.446588  -2.460705 -146.783228
+      1      -2.462741 215.250853  13.004901
+      2     -146.465987  12.973059 732.317657
+ A Tensor eigenvectors:
+                   0          1          2    
+      0      -0.958390   0.099861   0.267427
+      1       0.097083   0.994996  -0.023624
+      2      -0.268448   0.003321  -0.963289
+ A Eigenvalues: 
+                  0          1          2    
+      0     203.664077 215.047090 773.303930
+A(iso)  397.338366
+# -------------------------------------------------------------
+----------------------- !GEOMETRIES! ------------------------
+# -------------------------------------------------------------
+------------------------ !GEOMETRY! -------------------------
+    Number of atoms:    4 
+    Geometry Index:     1 
+    Coordinates:
+               0 C     -0.000524240947   -0.001070009601    0.295615524667
+               1 F     -0.731346390374   -1.016090448732   -0.102357280372
+               2 F     -0.514295160630    1.142062036001   -0.095357204932
+               3 F      1.246165791951   -0.124901577667   -0.096901039364
