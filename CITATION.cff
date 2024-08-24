@@ -1,0 +1,66 @@
+cff-version: 1.2.0
+title: CX3 Radical Exploration
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: Isaac
+    family-names: Spackman
+    email: ispackman@mines.edu
+    affiliation: Colorado School of Mines Department of Chemistry
+  - given-names: Jacob
+    family-names: States
+    email: jdstates@mines.edu
+    affiliation: Colorado School of Mines Department of Chemistry
+  - given-names: Shubham
+    family-names: Vyas
+    email: svyas@mines.edu
+    affiliation: Colorado School of Mines Department of Chemistry
+identifiers:
+  - type: url
+    value: >-
+      https://github.com/jacobdstates2020/CX3_radical_USRE_submission.git
+    description: Link to GitHub Repository
+repository-code: >-
+  https://github.com/jacobdstates2020/CX3_radical_USRE_submission.git
+url: 'https://www.mines.edu/vyas-research/'
+abstract: >
+  The integration of computational physical chemistry into
+  undergraduate laboratories presents a unique opportunity
+  for collaboration with the research software engineering
+  field. To promote more efficient computational workflows
+  and foster engagement among budding programmers in
+  computational modeling, we present this notebook
+  investigating small molecules with unpaired electrons
+  (radicals). The CF3 radical has been extensively explored
+  in the chemical literature owing to its importance in
+  ozone depletion from CFCs (chlorofluorocarbons) and its
+  unusual geometric structure which deviates from the planar
+  structure of the CH3 radical, despite the similar size of
+  the fluorine atom and the hydrogen atom. Exploring trends
+  along chemical groups is commonplace in the chemical
+  literature, and as such we have created a notebook
+  demonstrating the facile preparation and analysis of a
+  simple experiment substituting the F atoms in the CF3
+  radical for other halogens in the same group (Cl, Br, I)
+  in a combinatorial fashion. From a single excel sheet,
+  input files for the quantum modeling software ORCA can be
+  reproducibly generated. Upon completion of the requested
+  calculations, the meaningful data is systematically
+  extracted from the produced log files. This method
+  contrasts with traditional practices in undergraduate labs
+  in which students manually construct input files and
+  scroll through log files to copy/paste data and
+  demonstrates a more efficient and reproductible
+  alternative. The notebook not only serves as an
+  educational tool but also acquaints future research
+  software engineers with the specialized software developed
+  by computational chemists.
+keywords:
+  - Computational Chemistry
+  - PFAS
+  - Methyl Radical
+commit: First Official Release
+version: '1.0'
+date-released: '2024-06-03'
